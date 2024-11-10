@@ -1,0 +1,22 @@
+## The significance of union and intersection types in Typescript ##
+
+UNION: In Typescript code the symbol is "|". Though the word "union" here technically refers to "or". 
+For example: type Obj ={
+    manufacturer: 'toyota'|'jinjira'
+}
+here we might use both manufacturer or only one of them.
+INTERSECTION: In Typescript symbol for intersection is '&'. where include both objects common properties.
+For example: type Obj1 ={
+    manufacturer: 'toyota'|'jinjira',
+    country: 'bangladesh'
+}
+interface Obj2 {
+    model: 'civita'| 'Focus',
+    year: 2089,
+    country:'bangladesh'
+}
+type Object03 = Obj1 & Obj2 where all common keys are included.
+
+SIGNIFICANCES:
+For UNION  symbol uses '|' and for INTERSECTION symbol uses is '&'
+UNION may included all keys properties while INTERSECTION allowes only common key properties.
